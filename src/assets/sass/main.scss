@@ -1,0 +1,71 @@
+@import './base';
+@import './variables';
+@import './breakpoints';
+@import './fonts';
+
+// @import "./noscroll";
+// @import "./mixins";
+
+*,
+*::before,
+*::after {
+  font-family: 'Montserrat Alternates', 'Century Gothic', sans-serif;
+  color: $dark;
+}
+
+::selection {
+  background-color: $mid;
+  color: $light;
+}
+
+.route-move,
+.route-leave-active,
+.route-enter-active {
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.route-leave-to,
+.route-enter-from {
+  opacity: 0;
+}
+
+.route-leave-to {
+  position: absolute;
+}
+
+.icon-change-enter-active,
+.icon-change-leave-active {
+  transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.icon-change-enter-from,
+.icon-change-leave-to {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.icon-change-leave-to {
+  position: absolute;
+}
+
+.copying-enter-active,
+.copying-leave-active {
+  transition: 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.copying-enter-from,
+.copying-leave-to {
+  opacity: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  // border: 10px solid red;
+}
+
+.wrapper {
+  width: 1140px;
+  padding: 0 20px;
+  // border: 5px solid green;
+}

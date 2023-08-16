@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Thin.ttf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-ExtraLight.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-ExtraBold.ttf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Black.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-ThinItalic.ttf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-ExtraLightItalic.ttf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-LightItalic.ttf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-Italic.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-MediumItalic.ttf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-SemiBoldItalic.ttf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-BoldItalic.ttf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-ExtraBoldItalic.ttf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/src/assets/fonts/MontserratAlternates-BlackItalic.ttf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Consola";
+  src: url("/src/assets/fonts/CONSOLA.TTF") format("opentype");
+}
+*,
+*::before,
+*::after {
+  font-family: "Montserrat Alternates", "Century Gothic", sans-serif;
+  color: #212a3e;
+}
+
+::-moz-selection {
+  background-color: #394867;
+  color: #f1f6f9;
+}
+
+::selection {
+  background-color: #394867;
+  color: #f1f6f9;
+}
+
+.route-move,
+.route-leave-active,
+.route-enter-active {
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.route-leave-to,
+.route-enter-from {
+  opacity: 0;
+}
+
+.route-leave-to {
+  position: absolute;
+}
+
+.icon-change-enter-active,
+.icon-change-leave-active {
+  transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.icon-change-enter-from,
+.icon-change-leave-to {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.icon-change-leave-to {
+  position: absolute;
+}
+
+.copying-enter-active,
+.copying-leave-active {
+  transition: 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.copying-enter-from,
+.copying-leave-to {
+  opacity: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  width: 1140px;
+  padding: 0 20px;
+}/*# sourceMappingURL=main.css.map */
