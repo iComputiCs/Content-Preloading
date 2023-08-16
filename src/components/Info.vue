@@ -7,8 +7,18 @@
       </p>
       <p>
         {{ $t('info.invitation') }}
-        <a href="">Instagram</a>, <a href="">Facebook</a>, <a href="">LinkedIn</a>,
-        <a href="">Twitter</a> <img src="../assets/images/instagram-like-icon.png" alt="like" />
+        <a
+          href="https://www.instagram.com/p/CwA5uWTsVPC/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+          >Instagram</a
+        >,
+        <a href="https://www.facebook.com/photo/?fbid=804767814532761&set=a.773382931004583"
+          >Facebook</a
+        >,
+        <a
+          href="https://www.linkedin.com/posts/coderplusdesigner_brand-new-project-is-ready-this-is-an-open-activity-7097632331384954880-TOAR?utm_source=share&utm_medium=member_desktop"
+          >LinkedIn</a
+        >, <a href="https://twitter.com/coderXdesigner/status/1691866653108170781?s=20">Twitter</a>
+        <img src="../assets/images/instagram-like-icon.png" alt="like" />
       </p>
       <a target="_blank" href="https://github.com/iComputiCs/Content-Preloading"
         ><h3>{{ $t('info.sc') }}</h3></a
